@@ -1,0 +1,201 @@
+.container h1 {
+  text-align: center;
+  padding: 30px;
+  /* margin: auto; */
+  background-color: #1967D2;
+  color: white;
+  margin-bottom: 100px;
+}
+
+/* .container {
+  max-width: 690px;
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+} */
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    max-width: 1280px;
+    /* width: 100%; */
+    margin: auto;
+    /* padding: 0 48px; */
+    padding: 30px;
+    border-radius: 7px;
+    /* border: 1px solid #ccc; */
+    border-top: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .37);
+    transition: .6s all cubic-bezier(.4, 0, .2, 1);
+    width: auto;
+    background: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .wrapper {
+    min-height: 100%;
+  }
+}
+
+
+.wrapper {
+  display: block;
+}
+
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.text-input .to-text {
+  border-radius: 0px;
+  border-left: 1px solid #ccc;
+}
+
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.text-input textarea::placeholder {
+  color: #b7b6b6;
+}
+
+.controls,
+li,
+.icons1 .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+
+.controls .row .icons1 {
+  width: 60%;
+}
+
+.controls .row .icons1 .icon {
+  width: 40px;
+  color: #5F6368;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2 ease;
+  justify-content: center;
+}
+
+.controls .row .icons2 .icon {
+  width: 40px;
+  color: #5F6368;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2 ease;
+  justify-content: center;
+}
+
+
+.controls .row.from .icons2 {
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.controls .row.to .icons1 {
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+
+.controls .row select {
+  color: #333;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+}
+
+.controls .row.to select {
+  margin-right: 10px;
+}
+
+.controls .row.from select {
+  margin-left: 5px;
+}
+
+.text-input textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+.controls .row select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.text-input textarea::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.controls .row select::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+.controls .exchange {
+  color: #5F6368;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2 ease;
+}
+
+.controls .icon:active {
+  transform: scale(0.9);
+}
+
+@media (max-width:660px) {
+  .wrapper {
+    padding: 30px;
+  }
+
+  .wrapper .text-input {
+    flex-direction: column;
+  }
+
+  .text-input .to-text {
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+  }
+
+  .text-input textarea {
+    height: 200px;
+  }
+
+  .controls .row .icons1 {
+    display: none;
+  }
+
+  .controls .row select {
+    font-size: 16px;
+  }
+
+  .controls .exchange {
+    font-size: 14px;
+  }
+}
